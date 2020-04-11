@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <title>Hello World</title>
+        <link rel="stylesheet" href="css/swipercss.css">
+    </head>
+    <body class="app">
+        <!-- <audio id="mainAudio">
+            <source src="sounds/anamusic.mp3" type="audio/mpeg">
+        </audio> -->
+            <div class="bulut">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                   width="186.833px" height="80px" viewBox="0 0 186.833 80" enable-background="new 0 0 186.833 80" xml:space="preserve">
+                   <path opacity="0.7" fill="#FFFFFF" d="M179.167,52.678c0-20.71-16.789-37.5-37.5-37.5c-11.404,0-21.613,5.098-28.49,13.131
+                   c-6.574-5.685-15.137-9.131-24.51-9.131c-6.01,0-11.684,1.421-16.719,3.934c-6.543-5.567-15.017-8.934-24.281-8.934
+                   c-20.711,0-37.5,16.79-37.5,37.5c0,5.461,1.172,10.645,3.271,15.322h162.894C178.157,62.588,179.167,57.751,179.167,52.678z"/>
+               </svg>
+               </div>
+               <div class="bulut2">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    width="147.333px" height="63.167px" viewBox="0 0 147.333 63.167" enable-background="new 0 0 147.333 63.167"
+                    xml:space="preserve">
+               <path opacity="0.7" fill="#FFFFFF" d="M139.334,46.247c0-9.943-16.635-17.912-37.156-17.912c-3.717,0-7.304,0.313-10.689,0.806
+                   c0.413-1.562,0.635-3.174,0.635-4.859c0-10.91-9.229-19.742-20.613-19.742c-9.339,0-17.223,5.958-19.756,14.119
+                   c-1.034-0.177-2.097-0.272-3.184-0.272c-10.099,0-18.286,7.98-18.286,17.824c0,1.655,0.236,3.255,0.669,4.775
+                   c-2.043-1.747-4.691-2.808-7.591-2.808c-6.46,0-11.696,5.054-11.696,11.514c0,1.723,0.382,3.642,1.049,4.642h122.463
+                   C137.83,52.333,139.334,49.229,139.334,46.247z"/>
+               </svg></div>
+            <div class="bulut3">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	        width="147.333px" height="63.167px" viewBox="0 0 147.333 63.167" enable-background="new 0 0 147.333 63.167"
+	        xml:space="preserve">
+            <path opacity="0.7" fill="#FFFFFF" d="M146.277,51.095c0-14.203-11.513-25.686-25.717-25.686c-1.405,0-2.783,0.132-4.125,0.349
+	        c-8.667-14.38-24.43-23.992-42.443-23.992c-13.27,0-25.31,5.233-34.201,13.729c-1.321-0.154-2.663-0.242-4.026-0.242
+	        c-18.87,0-34.167,15.236-34.167,34.108c0,4.616,0.92,8.971,2.58,12.971h139.487C145.335,59.333,146.277,55.151,146.277,51.095z"/>
+            </svg>
+            </div>
+            
+            <div class="sun1">
+            <div class="sun"> 
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+                <defs>
+                <filter id="sofGlow" height="300%" width="300%" x="-75%" y="-75%">
+                        <!-- Thicken out the original shape -->
+                        <feMorphology operator="dilate" radius="4" in="SourceAlpha" result="thicken" />
+                
+                        <!-- Use a gaussian blur to create the soft blurriness of the glow -->
+                        <feGaussianBlur in="thicken" stdDeviation="10" result="blurred" />
+                
+                        <!-- Change the colour -->
+                        <feFlood flood-color="#F39C12" result="glowColor" />
+                
+                        <!-- Color in the glows -->
+                        <feComposite in="glowColor" in2="blurred" operator="in" result="softGlow_colored" />
+                
+                        <!--	Layer the effects together -->
+                        <feMerge>
+                            <feMergeNode in="softGlow_colored"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                
+                    </filter>
+                </defs>
+                <circle filter="url(#sofGlow)" fill="#F1C40F" cx="40.457" cy="40.834" r="27.851"/>
+               
+           </svg>
+           
+            </div>
+             </div>
+             <div class="menu">
+                <div id="division" class="division">
+                    <img src="../my_lovely_piggybank/img/arrow.png" class="baslik margin5">
+                  <button id="g"   class="margin5"> Start </button>
+                  <button id="o"   class="margin5"> Options </button>
+                  <button id="c"   class="margin5"> Challenges </button>
+                  <h2 class="baslik2">Best Score: </h2>
+                </div>
+            </div>
+            <div class="menu">
+                <div id="divisionSonuc2" class="divisionSonuc2">
+                    <div class="times"><i class="fa fa-2x fa-times-circle-o" aria-hidden="true"></i></div>
+                    <h1 class="headLine">Options</h1>
+                    <div  class="checkdiv">
+                        <label>
+                            <input id="checkone" type="checkbox" name="">
+                            <span class="check1"></span>
+                        </label>
+                        <span class="mute">Show FPS</span>    
+                    </div>
+                    <div  class="checkdiv margin25">
+                        <label>
+                            <input id="checktwo" type="checkbox" name="">
+                            <span class="check1"></span>
+                         </label>
+                        <span class="mute">Mute</span>    
+                    </div>
+                    <div  class="checkdiv margin25">
+                        <label>
+                            <input id="checkthree" type="checkbox" name="">
+                            <span class="check1"></span>
+                         </label>
+                        <span class="mute">Boy - Girl (for characters)</span>    
+                    </div>
+                    <button type="button" id="save">Save and exit</button>
+                    <p class="yaziSave"></p>
+                </div>
+            </div>
+        <script type="text/Javascript" src="js/js.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/swiper.js"></script>
+    </body>
+</html>

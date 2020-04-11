@@ -1,0 +1,92 @@
+
+  /* latin */
+  @font-face {
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Staatliches-Regular.ttf);
+  }
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2') format('woff2'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Staatliches', cursive;
+    overflow: hidden;
+}
+.btns{
+  position: absolute;
+  right: 50%;
+  top: 3.8%;
+}
+.pauseBtn{
+    color: black;
+    cursor: pointer;
+  }
+
+
+
+.divisionSonuc{
+  position: absolute;
+  background: black;
+  width: 70%;
+  height: 45%;
+  background-color: white;
+  opacity: 0;
+  border-radius: 12px;
+  opacity: 0.9;
+  display: none;
+}
+
+@keyframes opa {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 0.9
+  }
+}
+
+.ortala{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .btniki{
+    top: 35%;
+    left: 35%;
+    cursor: pointer;
+    transition: color .5s ease;
+    color: #aaa;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .btnbir{
+    top:35%;
+    left: 65%;
+    cursor: pointer;
+    transition: color .5s ease;
+    color: #aaa;
+    -webkit-tap-highlight-color: transparent;
+  
+  }
+  .btnbir:hover,
+  .btniki:hover{
+      color: #111;
+  }
+  .sonuc{
+    top: 60%;
+    border-top: 2px solid #111;
+    padding: 10px;
+  }
+  .sonuc1{
+    top: 70%;
+  }
+

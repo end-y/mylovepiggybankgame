@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+        -->
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <meta charset="UTF-8"> 
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <link rel="stylesheet" href="css/swipercss.css">
+        <title>Hello World</title>
+        
+    </head>
+    <body class="app1">
+            <div id="loading"><img class="gif ortala" src="img/loading.gif"><h1>Loading</h1></div>
+    <div >   
+    <div class="opt">
+        <div id="geri" class="geri"><i class="fa fa-arrow-circle-left fa-2x" aria-hidden="true"></i></div>
+    <div class="puanlar">
+        <h2 id="skor" class="">Best Score: </h2>
+        <h2 id="added" class="">Result Score: </h2>
+    </div>
+    <div class="swiper-container bir">
+         <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="resim1 ">
+                 <img class="acik1 "  src="img/coinless-wb.png" alt="coinless">
+                    <img class="sakli1 " src="img/coinless.png" alt="coinless">
+                    <p>Coinless</p>
+                    <p>0 - 100000 coins</p>
+                                </div></div>
+                            <div class="swiper-slide">
+                                <div class="resim2 ">
+                                    <img class="acik2 " src="img/coinlover-wb.png" alt="coinlover">
+                                    <img class="sakli2 " src="img/coinlover.png" alt="coinlover">
+                                    <p>Coinlover</p>
+                                    <p>100000 - 250000 coins</p>
+                                </div></div>
+                            <div class="swiper-slide">
+                                <div class="resim3 ">
+                                    <img class="acik3 " src="img/coincatcher-wb.png" alt="coincatcher">
+                                    <img class="sakli3 " src="img/coincatcher.png" alt="coincatcher">
+                                    <p>Coincatcher</p>
+                                    <p>250000 - 500000 coins</p>
+                                </div></div>
+                            <div class="swiper-slide"> 
+                                <div class="resim4 ">
+                                    <img class="acik4" src="img/coinman-wb.png" alt="coinman">
+                                    <img class="sakli4 " src="img/coinman.png" alt="coinman">
+                                    <p>Coinman</p>
+                                    <p>500000 - 1000000 coins</p>
+                                </div></div>
+                            <div class="swiper-slide">
+                                <div class="resim5 ">
+                                    <img class="acik5 " src="img/coinnaire-wb.png" alt="coinnaire">
+                                    <img class="sakli5 " src="img/coinnaire.png" alt="coinnaire">
+                                    <p>Coinnaire</p>
+                                    <p>1000000 and over coins</p>
+                                </div></div>
+                        </div>
+                    </div>
+                    <div class="swiper-container iki">
+                        <!-- Additional required wrapper -->
+                       <div class="swiper-wrapper">
+                           <!-- Slides -->
+                           <div class="swiper-slide">
+                               <div class="resim1 ">
+                                <img class="acik6 "  src="img/coinless-w-wb.png" alt="coinless">
+                                   <img class="sakli6 " src="img/coinless-w.png" alt="coinless">
+                                   <p>Coinless</p>
+                                   <p>0 - 100000 coins</p>
+                                               </div></div>
+                                           <div class="swiper-slide">
+                                               <div class="resim2 ">
+                                                   <img class="acik7 " src="img/coinlover-w-wb.png" alt="coinlover">
+                                                   <img class="sakli7 " src="img/coinlover-w.png" alt="coinlover">
+                                                   <p>Coinlover</p>
+                                                   <p>100000 - 250000 coins</p>
+                                               </div></div>
+                                           <div class="swiper-slide">
+                                               <div class="resim3 ">
+                                                   <img class="acik8 " src="img/coincatcher-w-wb.png" alt="coincatcher">
+                                                   <img class="sakli8 " src="img/coincatcher-w.png" alt="coincatcher">
+                                                   <p>Coincatcher</p>
+                                                   <p>250000 - 500000 coins</p>
+                                               </div></div>
+                                           <div class="swiper-slide"> 
+                                               <div class="resim4 ">
+                                                   <img class="acik9" src="img/coinwomen-w-wb.png" alt="coinman">
+                                                   <img class="sakli9 " src="img/coinwomen-w.png" alt="coinman">
+                                                   <p>Coinman</p>
+                                                   <p>500000 - 1000000 coins</p>
+                                               </div></div>
+                                           <div class="swiper-slide">
+                                               <div class="resim5 ">
+                                                   <img class="acik10 " src="img/coinnaire-w-wb.png" alt="coinnaire">
+                                                   <img class="sakli10 " src="img/coinnaire-w.png" alt="coinnaire">
+                                                   <p>Coinnaire</p>
+                                                   <p>1000000 and over coins</p>
+                                               </div></div>
+                                       </div>
+                                   </div>
+</div>
+</div>
+        <script src="js/javascript.js"></script>
+        <script type="text/javascript" src="js/swiper.js"></script>
+         </body>
+</html>

@@ -1,0 +1,419 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/HI_OiY8KO6hCsQSoAPmtMYebvpA.woff2)
+}
+/* latin */
+@font-face {
+  font-family: 'Staatliches';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/HI_OiY8KO6hCsQSoAPmtMYeVvpCNOw.woff2);
+}
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2') format('woff2'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
+body{
+  font-family: 'Staatliches', cursive;
+}
+.app1,.app{
+  margin: 0;
+  padding: 0;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.app{
+  background-image: url('../img/bg.png');
+}
+.app1{
+  background-image: url('../img/bg-options.png');
+}
+.ortala{
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.margin50{
+  margin-top: 75px
+}
+.margin100{
+  margin-top: 150px;
+}
+#g,#o,#c{
+  width: 100px;
+  height: 50px;
+  background: transparent;
+  border: 2px #111 solid;
+  color: #111;
+  cursor: pointer;
+  transition: .5s all;
+  font-family: 'Staatliches', cursive;
+  -webkit-tap-highlight-color: transparent;
+}
+.menu{
+  width: 300px;
+  height: 100px;
+  margin: 0 auto;
+}
+.division{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: -140px;
+}
+.margin5{
+  margin-bottom: 20px;
+}
+.divisionSonuc2{
+  background: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  display: none;
+  border-radius: 12px;
+  opacity: 0.9;
+}
+.animasyon{
+  animation: action 1s ease-in-out both ;
+  -webkit-animation: action 1s ease-in-out both; 
+  -ms-animation: action 1s ease-in-out both ;
+  -o-animation: action 1.5s ease-in-out both ;
+}
+.animasyon-reverse{
+  animation: actionreverse 1s ease-in-out both ;
+  -webkit-animation: actionreverse 1s ease-in-out both; 
+  -ms-animation: actionreverse 1s ease-in-out both ;
+  -o-animation: actionreverse 1s ease-in-out both ;
+  transform: skewX(20deg)
+}
+@keyframes action{
+  0% {
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+            
+  }
+  50%{
+    transform: skewX(20deg)
+  }
+  75%{
+    transform: skewX(0deg)
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+            
+  }
+}
+@keyframes actionreverse{
+  0% {
+           -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  20%{
+    transform: skewX(20deg)
+  }
+  100% {
+    -webkit-transform: translateX(350px);
+            transform: translateX(350px);
+  }
+}
+
+.baslik{
+  color: white;
+  top: 100px; 
+  width: 250px;  
+  -webkit-animation: logo 1.5s cubic-bezier(0.200, 0.600, 0.350, 1.000) both;
+          animation: logo 1.5s cubic-bezier(0.200, 0.600, 0.350, 1.000) both;
+          animation-delay: 1.2s;
+
+}
+
+@-webkit-keyframes logo {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+ 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+@keyframes logo {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+ 100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+  }
+}
+
+.baslik2{
+  top: 60%;
+  text-align: center;
+  width: 50%;
+  color: black;
+}
+.sonuc{
+  top: 60%;
+  border-top: 2px solid #111;
+  padding: 10px;
+}
+
+.times{
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+label{
+  position: relative;
+}
+label input[type="checkbox"]{
+  opacity: 0;
+  display: none;
+}
+.check1{
+  display: block;
+  width: 40px;
+  height: 20px;
+  border: solid 2px #111;
+  transition: 0.5s;
+  border-radius: 20px;
+}
+.check1:before{
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #111;
+  box-sizing: border-box;
+  background: #111;
+  transition: 0.5s;
+  border-radius: 50%
+}
+label input[type="checkbox"]:checked ~ .check1:before{
+  background: #f9a195;
+  transform: translateX(20px);
+  border: 2px solid #f9a195;
+}
+.checkdiv{
+  width: 40px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+  padding: 0;
+
+}
+.margin25{
+  margin-top: 25px;
+}
+.headLine{
+  text-align: center;
+  margin-top: 20px;
+}
+.checkdiv .mute{
+  position: absolute;
+  left: 120px;
+}
+#save{
+  margin-top: 40px;
+  margin-left: 80px;
+  background: transparent;
+  border: 1px solid #111;
+  width: 150px;
+  height: 50px;
+}
+.yaziSave{
+  text-align: center
+}
+.sonuc1{
+  top: 70%;
+}
+.puanlar{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #111;
+  margin: 0;
+  padding: 0;
+}
+.puanlar h2{
+  text-align: center;
+}
+.geri{
+  margin: 10px;
+}
+
+.sakli1,.sakli2,.sakli3,.sakli4,.sakli5,.sakli6,.sakli7,.sakli8,.sakli9,.sakli10{
+  display: none;
+  margin-left: auto;
+  margin-right: auto
+}
+.swiper-wrapper{
+  width: 600px;
+  margin-top: 20px;
+}
+.acik1,.acik2,.acik3,.acik4,.acik5,.acik6,.acik7,.acik8,.acik9,.acik10{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.swiper-wrapper p{
+  text-align: center;
+}
+.swiper-wrapper img{
+  max-width: 50vw;
+  height: 50vh;
+}
+.bir{
+  display: block
+}
+.iki {
+  display: none;
+}
+@keyframes rotating {
+  0% {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    scale: 1
+  }
+  50% {
+    scale: 1.2
+  }
+  100%{
+    scale: 1;
+  }
+}
+.sun {
+  text-align: center;
+  position: absolute;
+  -webkit-animation: rotating 5s linear infinite;
+  -moz-animation: rotating 5s linear infinite;
+  -ms-animation: rotating 5s linear infinite;
+  -o-animation: rotating 5s linear infinite;
+  animation: rotating 5s linear infinite;
+  border-radius: 50px;
+  overflow: hidden;
+  z-index: -1;
+}
+.sun1{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.bulut,.bulut2, .bulut3{
+  overflow-x: hidden;
+}
+.bulut svg {
+  margin-left: 500px;
+  animation: ilerleme 30s linear infinite;
+  -webkit-animation: ilerleme 30s linear infinite;
+  -ms-animation: ilerleme 30s linear infinite;
+  -o-animation: ilerleme 30s linear infinite;
+  z-index: 999;
+}
+@keyframes ilerleme{
+  from{
+    margin-left: 500px
+  }
+  to{
+    margin-left: -500px;
+  }
+}
+
+.bulut2 svg{
+  margin-top: 30px;
+  float: right;
+    margin-right: 500px;
+    animation: ilerleme2 50s linear infinite;
+    -webkit-animation: ilerleme2 50s linear infinite;
+    -ms-animation: ilerleme2 50s linear infinite;
+    -o-animation: ilerleme2 50s linear infinite;
+}
+@keyframes ilerleme2{
+  from{
+    margin-right: 500px
+  }
+  to{
+    margin-right: -500px;
+  }
+}
+
+.bulut3 svg {
+  margin-top: 50px;
+  margin-left: 600px;
+  animation: ilerleme3 60s linear infinite;
+  -webkit-animation: ilerleme3 60s linear infinite;
+  -ms-animation: ilerleme3 60s linear infinite;
+  -o-animation: ilerleme3 60s linear infinite;
+  z-index: 1;
+}
+@keyframes ilerleme3{
+  from{
+    margin-left: 600px
+  }
+  to{
+    margin-left: -600px;
+  }
+}
+#loading {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(192, 192, 192, 0.8);
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+  #loading .gif{
+    width: 10vh;
+    height: 10vh;
+  }
+  #loading h1{
+    text-align: center;
+    margin-top: 70vh;
+    padding: auto;
+    
+  }
+ 
