@@ -1,16 +1,10 @@
-/* latin-ext */
-@font-face {
-  font-family: 'Staatliches';
-  font-style: normal;
-  font-weight: 400;
-  src: url(../fonts/HI_OiY8KO6hCsQSoAPmtMYebvpA.woff2)
-}
+
 /* latin */
 @font-face {
   font-family: 'Staatliches';
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/HI_OiY8KO6hCsQSoAPmtMYeVvpCNOw.woff2);
+  src: url(../fonts/Staatliches-Regular.ttf);
 }
 @font-face {
   font-family: 'FontAwesome';
