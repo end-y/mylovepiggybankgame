@@ -25,18 +25,7 @@ function pause(){
     })
 }
 function sifirla(){
-    loop()
-    live.length =6;
-    score =0;
-    top1.pop();
-    carpi.pop()
-    ball2.pop()
-    top1.length = 0;
-    carpi.length =0;
-    ball2.length = 0;
-    pauseBtn.style.display = "inline"
-    playBtn.style.display = "none"
-    document.querySelector(".divisionSonuc").style.display = "none"
+    window.location = "game.html"
   }
   function yenile(){
     window.location = "index.html"

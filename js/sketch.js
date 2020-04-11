@@ -185,10 +185,10 @@ let elapsed = end - start;
  
 
   for (let c = 0; c<live.length; c++){
-    live[c] = rect(20*c+windowWidth-180,40,15,15)
+    live[c] = rect(20*c+windowWidth-200,40,15,15)
     
   }
-  text(score,100,55)
+  text(score,50,55)
   if(JSON.parse(localStorage.getItem("checkone"))==true){
     fps = frameRate();
     fill(250)
