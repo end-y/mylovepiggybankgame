@@ -12,6 +12,7 @@ var da
 var dc;
 var sayi
 var sayiR
+p5.disableFriendlyErrors = true
 var number;
 let sound1;
 var z;
@@ -197,18 +198,36 @@ let elapsed = end - start;
   }
 
   if(live.length == 0 ){
-     // soundCalistir3(); 
+     // soundCalistir3();
+        document.querySelector(".divisionSonuc").style.display = "inline"  
       
       if(score > highScore){
         var enBuyuk = parseInt(highScore) 
         enBuyuk = score;
         var enBuyuk1 = localStorage.setItem(localStorageName, enBuyuk)
+        document.querySelector(".divisionSonuc").style.display = "inline"  
       }else if(score < highScore){
         enBuyuk = localStorage.getItem(localStorageName)
       }
       document.querySelector(".sonuc").innerHTML = "Your score: " + score + "</br> High score: " + enBuyuk
      
-      pause()
+      document.getElementById("btniki").addEventListener("click",function(){
+        window.location = "index.html"
+      })
+      document.getElementById("btnbir").addEventListener("click",function(){
+        loop()
+    live.length =6;
+    score =0;
+    top1.pop();
+    carpi.pop()
+    ball2.pop()
+    top1.length = 0;
+    carpi.length =0;
+    ball2.length = 0;
+    pauseBtn.style.display = "inline"
+    playBtn.style.display = "none"
+    document.querySelector(".divisionSonuc").style.display = "none"
+      })
       if(score > 0){
         var sonToplam = resultedadd + score
         localStorage.setItem("resulted",sonToplam)
