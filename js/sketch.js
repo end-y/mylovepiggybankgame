@@ -198,22 +198,23 @@ let elapsed = end - start;
   }
 
   if(live.length == 0 ){
-     // soundCalistir3();
-        document.querySelector(".divisionSonuc").style.display = "inline"  
+     // soundCalistir3(); 
+      
       if(score > highScore){
         var enBuyuk = parseInt(highScore) 
         enBuyuk = score;
         var enBuyuk1 = localStorage.setItem(localStorageName, enBuyuk)
-        document.querySelector(".divisionSonuc").style.display = "inline"  
       }else if(score < highScore){
         enBuyuk = localStorage.getItem(localStorageName)
       }
-
+      document.querySelector(".sonuc").innerHTML = "Your score: " + score + "</br> High score: " + enBuyuk
+     
+      pause()
       if(score > 0){
         var sonToplam = resultedadd + score
         localStorage.setItem("resulted",sonToplam)
       }
-      pause()
+      noLoop()
     }
 }
 function mouseClicked(){
