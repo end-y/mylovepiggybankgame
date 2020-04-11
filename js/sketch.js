@@ -12,7 +12,6 @@ var da
 var dc;
 var sayi
 var sayiR
-p5.disableFriendlyErrors = true
 var number;
 let sound1;
 var z;
