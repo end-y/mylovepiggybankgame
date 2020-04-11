@@ -210,7 +210,10 @@ let elapsed = end - start;
         enBuyuk = localStorage.getItem(localStorageName)
       }
       document.querySelector(".sonuc").innerHTML = "Your score: " + score + "</br> High score: " + enBuyuk
-     
+      if(score > 0){
+        var sonToplam = resultedadd + score
+        localStorage.setItem("resulted",sonToplam)
+      }
       document.getElementById("btniki").addEventListener("click",function(){
         window.location = "index.html"
       })
@@ -227,11 +230,9 @@ let elapsed = end - start;
     pauseBtn.style.display = "inline"
     playBtn.style.display = "none"
     document.querySelector(".divisionSonuc").style.display = "none"
+    return false;
       })
-      if(score > 0){
-        var sonToplam = resultedadd + score
-        localStorage.setItem("resulted",sonToplam)
-      }
+      noloop()
     }
 }
 function mouseClicked(){
