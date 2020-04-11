@@ -200,7 +200,6 @@ let elapsed = end - start;
   if(live.length == 0 ){
      // soundCalistir3();
         document.querySelector(".divisionSonuc").style.display = "inline"  
-        noLoop()
       if(score > highScore){
         var enBuyuk = parseInt(highScore) 
         enBuyuk = score;
@@ -209,28 +208,12 @@ let elapsed = end - start;
       }else if(score < highScore){
         enBuyuk = localStorage.getItem(localStorageName)
       }
-      document.querySelector(".sonuc").innerHTML = "Your score: " + score + "</br> High score: " + enBuyuk
-     
-      document.getElementById("btniki").addEventListener("click",function(){
-        yenile()
-      })
-      document.getElementById("btnbir").addEventListener("click",function(){
-        loop()
-        live.length =6;
-        score =0;
-        top1.pop();
-        carpi.pop()
-        ball2.pop()
-        top1.length = 0;
-        carpi.length =0;
-        ball2.length = 0;
-        document.querySelector(".divisionSonuc").style.display = "none"
-      })
+
       if(score > 0){
         var sonToplam = resultedadd + score
         localStorage.setItem("resulted",sonToplam)
       }
-      
+      pause()
     }
 }
 function mouseClicked(){
