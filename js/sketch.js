@@ -185,7 +185,7 @@ let elapsed = end - start;
  
 
   for (let c = 0; c<live.length; c++){
-    live[c] = rect(20*c+windowWidth-150,40,15,15)
+    live[c] = rect(20*c+windowWidth-130,40,15,15)
     
   }
   text(score,50,55)
