@@ -214,7 +214,6 @@ let elapsed = end - start;
         var sonToplam = resultedadd + score
         localStorage.setItem("resulted",sonToplam)
       }
-      noLoop()
     }
 }
 function mouseClicked(){
