@@ -216,17 +216,15 @@ let elapsed = end - start;
       })
       document.getElementById("btnbir").addEventListener("click",function(){
         loop()
-    live.length =6;
-    score =0;
-    top1.pop();
-    carpi.pop()
-    ball2.pop()
-    top1.length = 0;
-    carpi.length =0;
-    ball2.length = 0;
-    pauseBtn.style.display = "inline"
-    playBtn.style.display = "none"
-    document.querySelector(".divisionSonuc").style.display = "none"
+        live.length =6;
+        score =0;
+        top1.pop();
+        carpi.pop()
+        ball2.pop()
+        top1.length = 0;
+        carpi.length =0;
+        ball2.length = 0;
+        document.querySelector(".divisionSonuc").style.display = "none"
       })
       if(score > 0){
         var sonToplam = resultedadd + score
